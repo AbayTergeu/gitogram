@@ -1,0 +1,19 @@
+.stories{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+}
+
+.iconend{
+    display: flex;
+    flex-direction: row-reverse;
+    right: 180px;
+}
+
+.about {
+    display:inline-block;
+   }
