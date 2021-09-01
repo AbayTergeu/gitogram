@@ -1,4 +1,9 @@
 <template>
+    <div class="x-container"></div>
+</template>
+
+<!--
+<template>
     <div class="topline">
         <topline>
             <template #headline>
@@ -35,18 +40,24 @@
         </div>
     </div>
 </template>
+-->
 
 <script>
-import { topline } from '../../components/topline'
+/*import { topline } from '../../components/topline'
 import { icon } from '../../icons'
 import { storyUserItem } from '../../components/storyUserItem'
 import stories from './data.json'
 import { toggler } from '../../components/toggler'
 import { comment } from '../../components/comment'
 
-import Comment from '../../components/comment/comment.vue'
+import Comment from '../../components/comment/comment.vue'*/
+import * as api from '../../api'
+
 export default {
     name: 'feeds',
+    created(){
+        api.trandings.getTrendings()
+    }/*,
     components: {
         topline,
         icon,
@@ -64,7 +75,7 @@ export default {
         toggle(isOpened){
             this.shown = isOpened
         }
-    }
+    }*/
 }
 </script>
 <style lang="scss" scoped src="./feeds.scss"></style>
