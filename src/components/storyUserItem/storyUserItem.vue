@@ -1,7 +1,7 @@
 <template>
     <button class="c-story-user-item" @click="$emit('onPress')">
         <div class="avatar">
-            <img :src= "avatar" class="img" alt="user avatar"/>
+            <img :src="avatar" class ="img" alt="user name">
         </div>
         <div class="username">
             {{ username }}
@@ -24,6 +24,11 @@ export default {
             type: String,
             requierd: true
         }        
+    },
+    data () {
+        return {
+            publicPath: process.env.BASE_URL
+        }
     }
 }
 </script>
