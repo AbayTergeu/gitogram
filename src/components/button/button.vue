@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    name: 'Button',
+    name: 'button',
     props: {
         hoverText: {
             type: String
