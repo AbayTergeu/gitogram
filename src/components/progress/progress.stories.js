@@ -1,13 +1,10 @@
-import progress  from './progress.vue'
-
-
-export default{
-    title: "progress",
-    component: { progress }
+import progress from './progress.vue'
+export default {
+  title: 'progress',
+  component: { progress }
 }
-
-export const defaultView = () => ({
-    template: `
-        <h1>Hello progress</h1>
-    `
+const template = () => ({
+  components: { progress },
+  template: '<progress hover-text="Unfollow">Following</progress>'
 })
+export const Default = template.bind({})
