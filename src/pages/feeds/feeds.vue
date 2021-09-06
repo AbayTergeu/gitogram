@@ -56,7 +56,7 @@ import * as api from '../../api'
 export default {
     name: 'feeds',
     created(){
-        api.trandings.getTrendings()
+        api.trendings.getTrendings()
     }/*,
     components: {
         topline,

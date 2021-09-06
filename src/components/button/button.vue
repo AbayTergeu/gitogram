@@ -12,19 +12,19 @@
 </template>
 
 <script>
-export default {
-    name: 'Button',
-    props: {
-        hoverText: {
-            type: String
-        }
-    },
-    computed: {
-        withHoverText(){
-            return this.hoverText?.length
+    export default {
+        name: 'x-button',
+        props: {
+            hoverText: {
+                type: String
+            }
+        },
+        computed: {
+            withHoverText(){
+                return this.hoverText?.length
+            }
         }
     }
-}
 </script>
 
 <style lang="scss" scoped src="./button.scss"></style>
