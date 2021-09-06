@@ -5,7 +5,8 @@ export default{
     argTypes: {
         hoverText: {
             control: {type: 'text'}
-        }
+        },
+        onClick: {}
     }
 }
 const template = (args) => ({
