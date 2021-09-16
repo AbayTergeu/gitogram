@@ -1,0 +1,31 @@
+.c-user {
+  display: flex;
+  align-items: center;
+
+  &.size-medium {
+    .avatar {
+      width: 72px;
+      margin-right: 26px;
+    }
+
+    .username {
+      font-size: 18px;
+    }
+  }
+}
+
+.type {
+  font-size: 12px;
+  color: rgba(168, 168, 168, 1);
+}
+
+.avatar {
+  width: 30px;
+  margin-right: 14px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 14px;
+}
+

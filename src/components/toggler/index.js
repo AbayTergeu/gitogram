@@ -1,1 +1,1 @@
-export { default as toggler } from './toggler'
+export { default as toggler } from "./toggler.vue";

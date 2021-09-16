@@ -1,0 +1,91 @@
+:root {
+  --z-active-slide: 10;
+  --grey: #404040;
+  --green: #31AE54;
+  --borders: #D3D3D3;
+  --lightGray: #9E9E9E;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #262626;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    margin: 0;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+svg {
+  display: block;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+#app {
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+}
+
+.x-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes swing {
+  0% {
+    background-position-x: -180px;
+  }
+
+  50% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position: -180px;
+  }
+}

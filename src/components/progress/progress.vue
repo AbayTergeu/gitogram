@@ -1,20 +1,18 @@
 <template>
-    <div :class={active} class="c-progress">
-        <div class="indicator"></div>
-    </div>
+  <div class="c-progress">
+    <div class="progress-item" v-for="segment in segments" :key="segment"></div>
+  </div>
 </template>
 
 <script>
-    export default {
-        data(){
-            return{
-                active: false
-            }
-        },
-        mounted(){
-            this.active = true
-        }
+export default {
+  props: {
+    segments: {
+      type: Number,
+      required: true
     }
+  }
+};
 </script>
 
-<style lang="scss" scopped src="./progress.scss"></style>
+<style lang="scss" scoped src="./progress.scss"></style>

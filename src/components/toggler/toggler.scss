@@ -1,21 +1,23 @@
-.button{
-    display: inline-flex;
-    align-items: center;
-    padding: 0;
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
 
-
-    .icon{
-        width: 10px;
-        transform: rotate(180deg);
+  .icon {
+    svg {
+      transform: rotate(180deg);
     }
+  }
 
-    &.active{
-        .icon{
-            transform: rotate(0deg);
-        }
+  &.active {
+    .icon {
+      svg {
+        transform: rotate(0deg);
+      }
     }
+  }
 }
 
-.text{
-    margin-right: 5px;    
+.text {
+  margin-right: 5px;
 }

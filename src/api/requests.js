@@ -1,13 +1,20 @@
-import axios from 'axios'
+import axios from "axios";
 
-const baseUrl = 'https://api.github.com'
+const token = localStorage.getItem("token");
+
+const baseURL = "https://api.github.com";
+
+if (token) {
+  axios.defaults.headers.Authorization = `token ${token}`;
+}
 
 export const makeRequest = ({
-    url, method = 'get', data = {}, headers = {}
+  url, method = "get", data = {}, withBaseUrl = true,
+  headers = {}
 }) => axios({
-    url,
-    method,
-    data,
-    baseUrl,
-    headers
-})
+  url,
+  method,
+  data,
+  baseURL: withBaseUrl ? baseURL : "",
+  headers: { ...headers }
+});
